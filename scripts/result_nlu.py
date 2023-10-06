@@ -29,7 +29,7 @@ class resultNLU():
         self.slots = []
         for slot in dict_result["slots"]:
             S = Slot(slot["rawValue"],slot["value"]["value"],slot["slotName"])
-            self.slots.append[S]
+            self.slots.append(S)
 
     def __str__(self) -> str:
         msg = "Result :\n"

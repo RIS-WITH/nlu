@@ -14,6 +14,7 @@ class NLU:
         self.current_language = ""
     
     def setLanguage(self,language= "fr",already_train = True):
+        print('set language : ',language)
         if language != self.current_language:
             self.current_language = language
             if language == "fr": 

@@ -1,13 +1,13 @@
-
+#!/usr/bin/env python3
 import rospy
-from nlu.scripts.nlu import NLU
+from nlu_engine import NLU
 from nlu.srv import NLUParsingService,NLUParsingServiceRequest,NLUParsingServiceResponse
 from nlu.msg import Slot
-from nlu.scripts.result_nlu import resultNLU
+from result_nlu import resultNLU
 
 class node_nlu():
 
-    def __init__(self,robot_name) -> None:
+    def __init__(self) -> None:
         rospy.init_node('nlu_node')
         self.nlu = NLU()
         rospy.Service('nlu_parsing', NLUParsingService, self.callback_tts)
@@ -22,7 +22,7 @@ class node_nlu():
         print(result)
         res = NLUParsingServiceResponse()
         res.intent = result.intent
-        res.comprehension_score = result.intent_proba
+        res.score = result.intent_proba
         res.slots = []
         for slot in result.slots:
             S = Slot()
