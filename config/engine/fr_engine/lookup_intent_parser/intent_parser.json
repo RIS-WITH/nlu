@@ -1,0 +1,65 @@
+{
+  "config": {
+    "ignore_stop_words": true,
+    "unit_name": "lookup_intent_parser"
+  },
+  "entity_scopes": [
+    {
+      "entity_scope": {
+        "builtin": [],
+        "custom": [
+          "object"
+        ]
+      },
+      "intent_group": [
+        "changeNameOfObject"
+      ]
+    }
+  ],
+  "intents_names": [
+    "changeNameOfObject"
+  ],
+  "language_code": "fr",
+  "map": {
+    "-1513699563": [
+      0,
+      [
+        1,
+        0
+      ]
+    ],
+    "56404677": [
+      0,
+      [
+        1,
+        0
+      ]
+    ],
+    "272709570": [
+      0,
+      [
+        0,
+        1
+      ]
+    ],
+    "487858776": [
+      0,
+      [
+        1,
+        0
+      ]
+    ],
+    "1043156615": [
+      0,
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "slots_names": [
+    "new",
+    "old"
+  ],
+  "stop_words_whitelist": {}
+}
