@@ -1,0 +1,2 @@
+string slotName
+string value

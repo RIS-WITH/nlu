@@ -1,0 +1,7 @@
+string sentence
+string language
+---
+string intent
+float64 comprehension_score
+Slot[] slots
+
