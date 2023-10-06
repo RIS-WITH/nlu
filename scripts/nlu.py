@@ -2,7 +2,7 @@ import argparse
 import io
 import json
 import os, shutil
-from nlu.scripts.result_nlu import resultNLU
+from result_nlu import resultNLU
 from snips_nlu import SnipsNLUEngine
 from snips_nlu.default_configs import CONFIG_FR,CONFIG_EN
 
