@@ -1,0 +1,38 @@
+# changeNameOfObject intent
+---
+type: intent
+name: changeNameOfObject
+slots:
+  - name: old
+    entity: object
+  - name: new
+    entity: object
+utterances:
+  - Now it's [new](plop) instead of [old](cube)
+  - It's no longer an [old](triangle) but a [new](cat)
+  - We rename [old](circle) to [new](dog)
+  - we call [old](cube) [new](plop).
+  - we now call a [old](cube) a [new](plop).
+  - we now call a [old](cube) a [new](plop).
+  - we call a [old](cube) a [new](plop) now.
+  - We're going to rename [old](sauerkraut) to [new](phoenix)
+  - We replace [old](sauerkraut) with [new](phoenix)
+  
+# object entity
+---
+type: entity
+name: object
+automatically_extensible: yes
+values:
+- cube
+- [circle, round]
+- triangle
+- blue
+- red
+- chocolat
+- green 
+- dog
+- cat 
+- plip
+- plop
+- sauerkraut

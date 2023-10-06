@@ -1,0 +1,260 @@
+{
+  "entities": {
+    "object": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "cube"
+        },
+        {
+          "synonyms": [
+            "round"
+          ],
+          "value": "circle"
+        },
+        {
+          "synonyms": [],
+          "value": "triangle"
+        },
+        {
+          "synonyms": [],
+          "value": "blue"
+        },
+        {
+          "synonyms": [],
+          "value": "red"
+        },
+        {
+          "synonyms": [],
+          "value": "chocolat"
+        },
+        {
+          "synonyms": [],
+          "value": "green"
+        },
+        {
+          "synonyms": [],
+          "value": "dog"
+        },
+        {
+          "synonyms": [],
+          "value": "cat"
+        },
+        {
+          "synonyms": [],
+          "value": "plip"
+        },
+        {
+          "synonyms": [],
+          "value": "plop"
+        },
+        {
+          "synonyms": [],
+          "value": "sauerkraut"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    }
+  },
+  "intents": {
+    "changeNameOfObject": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "Now it's "
+            },
+            {
+              "entity": "object",
+              "slot_name": "new",
+              "text": "plop"
+            },
+            {
+              "text": " instead of "
+            },
+            {
+              "entity": "object",
+              "slot_name": "old",
+              "text": "cube"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "It's no longer an "
+            },
+            {
+              "entity": "object",
+              "slot_name": "old",
+              "text": "triangle"
+            },
+            {
+              "text": " but a "
+            },
+            {
+              "entity": "object",
+              "slot_name": "new",
+              "text": "cat"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "We rename "
+            },
+            {
+              "entity": "object",
+              "slot_name": "old",
+              "text": "circle"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "entity": "object",
+              "slot_name": "new",
+              "text": "dog"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "we call "
+            },
+            {
+              "entity": "object",
+              "slot_name": "old",
+              "text": "cube"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "object",
+              "slot_name": "new",
+              "text": "plop"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "we now call a "
+            },
+            {
+              "entity": "object",
+              "slot_name": "old",
+              "text": "cube"
+            },
+            {
+              "text": " a "
+            },
+            {
+              "entity": "object",
+              "slot_name": "new",
+              "text": "plop"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "we now call a "
+            },
+            {
+              "entity": "object",
+              "slot_name": "old",
+              "text": "cube"
+            },
+            {
+              "text": " a "
+            },
+            {
+              "entity": "object",
+              "slot_name": "new",
+              "text": "plop"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "we call a "
+            },
+            {
+              "entity": "object",
+              "slot_name": "old",
+              "text": "cube"
+            },
+            {
+              "text": " a "
+            },
+            {
+              "entity": "object",
+              "slot_name": "new",
+              "text": "plop"
+            },
+            {
+              "text": " now."
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "We're going to rename "
+            },
+            {
+              "entity": "object",
+              "slot_name": "old",
+              "text": "sauerkraut"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "entity": "object",
+              "slot_name": "new",
+              "text": "phoenix"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "We replace "
+            },
+            {
+              "entity": "object",
+              "slot_name": "old",
+              "text": "sauerkraut"
+            },
+            {
+              "text": " with "
+            },
+            {
+              "entity": "object",
+              "slot_name": "new",
+              "text": "phoenix"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "en"
+}

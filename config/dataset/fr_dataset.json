@@ -1,0 +1,240 @@
+{
+  "entities": {
+    "object": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "cube"
+        },
+        {
+          "synonyms": [
+            "rond"
+          ],
+          "value": "cercle"
+        },
+        {
+          "synonyms": [],
+          "value": "triangle"
+        },
+        {
+          "synonyms": [],
+          "value": "bleu"
+        },
+        {
+          "synonyms": [],
+          "value": "vert"
+        },
+        {
+          "synonyms": [],
+          "value": "chien"
+        },
+        {
+          "synonyms": [],
+          "value": "chat"
+        },
+        {
+          "synonyms": [],
+          "value": "plip"
+        },
+        {
+          "synonyms": [],
+          "value": "plop"
+        },
+        {
+          "synonyms": [],
+          "value": "ph\u00e9nix"
+        },
+        {
+          "synonyms": [],
+          "value": "f\u00e9lix"
+        },
+        {
+          "synonyms": [],
+          "value": "choucroute"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    }
+  },
+  "intents": {
+    "changeNameOfObject": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "Maintenant on utilise "
+            },
+            {
+              "entity": "object",
+              "slot_name": "new",
+              "text": "plop"
+            },
+            {
+              "text": " au lieu de "
+            },
+            {
+              "entity": "object",
+              "slot_name": "old",
+              "text": "cube"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Ce n'est plus un "
+            },
+            {
+              "entity": "object",
+              "slot_name": "old",
+              "text": "triangle"
+            },
+            {
+              "text": " mais un "
+            },
+            {
+              "entity": "object",
+              "slot_name": "new",
+              "text": "chat"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "On renomme "
+            },
+            {
+              "entity": "object",
+              "slot_name": "old",
+              "text": "cercle"
+            },
+            {
+              "text": " en "
+            },
+            {
+              "entity": "object",
+              "slot_name": "new",
+              "text": "chien"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "on appelle "
+            },
+            {
+              "entity": "object",
+              "slot_name": "old",
+              "text": "cube"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "object",
+              "slot_name": "new",
+              "text": "plop"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "on appelle un "
+            },
+            {
+              "entity": "object",
+              "slot_name": "old",
+              "text": "cube"
+            },
+            {
+              "text": " un "
+            },
+            {
+              "entity": "object",
+              "slot_name": "new",
+              "text": "plop"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "on appelle maintenant un "
+            },
+            {
+              "entity": "object",
+              "slot_name": "old",
+              "text": "cube"
+            },
+            {
+              "text": " un "
+            },
+            {
+              "entity": "object",
+              "slot_name": "new",
+              "text": "plop"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "on appelle un "
+            },
+            {
+              "entity": "object",
+              "slot_name": "old",
+              "text": "cube"
+            },
+            {
+              "text": " un "
+            },
+            {
+              "entity": "object",
+              "slot_name": "new",
+              "text": "plop"
+            },
+            {
+              "text": " maintenant."
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "On va renommer "
+            },
+            {
+              "entity": "object",
+              "slot_name": "old",
+              "text": "choucroute"
+            },
+            {
+              "text": " en "
+            },
+            {
+              "entity": "object",
+              "slot_name": "new",
+              "text": "ph\u00e9nix"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "fr"
+}

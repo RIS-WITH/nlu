@@ -1,0 +1,41 @@
+# changeNameOfObject intent
+---
+type: intent
+name: changeNameOfObject
+slots:
+  - name: old
+    entity: object
+  - name: new
+    entity: object
+utterances:
+  - Maintenant on utilise [new](plop) au lieu de [old](cube)
+  - Ce n'est plus un [old](triangle) mais un [new](chat)
+  - On renomme [old](cercle) en [new](chien)
+  - on appelle [old](cube) [new](plop).
+  - on appelle un [old](cube) un [new](plop).
+  - on appelle maintenant un [old](cube) un [new](plop).
+  - on appelle un [old](cube) un [new](plop) maintenant.
+  - On va renommer [old](choucroute) en [new](phénix)
+  - On remplace [old](choucroute) par [new](phénix)
+  - Remplace [old](bleu) par [new](cheval).
+  
+  
+# object entity
+---
+type: entity
+name: object
+automatically_extensible: yes
+values:
+- cube
+- [cercle,rond]
+- triangle
+- bleu
+- vert 
+- cheval
+- chien
+- chat 
+- plip
+- plop
+- phénix
+- félix
+- choucroute
