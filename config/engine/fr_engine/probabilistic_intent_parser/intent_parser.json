@@ -173,8 +173,12 @@
   },
   "slot_fillers": [
     {
-      "intent": "changeNameOfObject",
+      "intent": "changeGenderOfObject",
       "slot_filler_name": "slot_filler_0"
+    },
+    {
+      "intent": "changeNameOfObject",
+      "slot_filler_name": "slot_filler_1"
     }
   ]
 }

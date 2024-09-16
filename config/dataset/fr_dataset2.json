@@ -1,20 +1,5 @@
 {
   "entities": {
-    "gender": {
-      "automatically_extensible": false,
-      "data": [
-        {
-          "synonyms": [],
-          "value": "f\u00e9minin"
-        },
-        {
-          "synonyms": [],
-          "value": "masculin"
-        }
-      ],
-      "matching_strictness": 1.0,
-      "use_synonyms": true
-    },
     "object": {
       "automatically_extensible": true,
       "data": [
@@ -39,10 +24,6 @@
         {
           "synonyms": [],
           "value": "vert"
-        },
-        {
-          "synonyms": [],
-          "value": "cheval"
         },
         {
           "synonyms": [],
@@ -75,87 +56,24 @@
       ],
       "matching_strictness": 1.0,
       "use_synonyms": true
+    },
+    "gender": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "f\u00e9minin"
+        },
+        {
+          "synonyms": [],
+          "value": "masculin"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
     }
   },
   "intents": {
-    "changeGenderOfObject": {
-      "utterances": [
-        {
-          "data": [
-            {
-              "entity": "object",
-              "slot_name": "object_name",
-              "text": "plop"
-            },
-            {
-              "text": " est un mot "
-            },
-            {
-              "entity": "gender",
-              "slot_name": "object_gender",
-              "text": "f\u00e9minin"
-            }
-          ]
-        },
-        {
-          "data": [
-            {
-              "text": "Le mot "
-            },
-            {
-              "entity": "object",
-              "slot_name": "object_name",
-              "text": "chat"
-            },
-            {
-              "text": " est "
-            },
-            {
-              "entity": "gender",
-              "slot_name": "object_gender",
-              "text": "masculin"
-            }
-          ]
-        },
-        {
-          "data": [
-            {
-              "text": "Le mot "
-            },
-            {
-              "entity": "object",
-              "slot_name": "object_name",
-              "text": "chien"
-            },
-            {
-              "text": " est un mot "
-            },
-            {
-              "entity": "gender",
-              "slot_name": "object_gender",
-              "text": "masculin"
-            }
-          ]
-        },
-        {
-          "data": [
-            {
-              "entity": "object",
-              "slot_name": "object_name",
-              "text": "choucroute"
-            },
-            {
-              "text": " est "
-            },
-            {
-              "entity": "gender",
-              "slot_name": "object_gender",
-              "text": "f\u00e9minin"
-            }
-          ]
-        }
-      ]
-    },
     "changeNameOfObject": {
       "utterances": [
         {
@@ -326,50 +244,91 @@
             {
               "entity": "object",
               "slot_name": "new",
-              "text": "ph\u00e9nix"
+              "text": "ph\u00e9nix"3
+            }
+          ]
+        }
+      ]
+    },
+    "changeGenderOfObject": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "le mot "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object_name",
+              "text": "cube"
+            },
+            {
+              "text": " est "
+            },
+            {
+              "entity": "gender",
+              "slot_name": "object_gender",
+              "text": "masculin"
             }
           ]
         },
         {
           "data": [
             {
-              "text": "On remplace "
+              "text": ""
             },
             {
               "entity": "object",
-              "slot_name": "old",
-              "text": "choucroute"
+              "slot_name": "object_name",
+              "text": "plop"
             },
             {
-              "text": " par "
+              "text": " est "
             },
             {
-              "entity": "object",
-              "slot_name": "new",
-              "text": "ph\u00e9nix"
+              "entity": "gender",
+              "slot_name": "object_gender",
+              "text": "f\u00e9minin"
             }
           ]
         },
         {
           "data": [
             {
-              "text": "Remplace "
+              "text": "le mot "
             },
             {
               "entity": "object",
-              "slot_name": "old",
-              "text": "bleu"
+              "slot_name": "object_name",
+              "text": "cube"
             },
             {
-              "text": " par "
+              "text": " est un mot "
+            },
+            {
+              "entity": "gender",
+              "slot_name": "object_gender",
+              "text": "masculin"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": ""
             },
             {
               "entity": "object",
-              "slot_name": "new",
-              "text": "cheval"
+              "slot_name": "object_name",
+              "text": "cube"
             },
             {
-              "text": "."
+              "text": " est un mot "
+            },
+            {
+              "entity": "gender",
+              "slot_name": "object_gender",
+              "text": "f\u00e9minin"
             }
           ]
         }

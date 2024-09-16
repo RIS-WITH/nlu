@@ -19,7 +19,22 @@ utterances:
   - On remplace [old](choucroute) par [new](phénix)
   - Remplace [old](bleu) par [new](cheval).
   
-  
+
+# changeGenderOfObject intent
+---
+type: intent
+name: changeGenderOfObject
+slots:
+  - name: object_name
+    entity: object
+  - name: object_gender
+    entity: gender
+utterances:
+  - "[object_name](plop) est un mot [object_gender](féminin)"
+  - Le mot [object_name](chat) est [object_gender](masculin)
+  - Le mot [object_name](chien) est un mot [object_gender](masculin)
+  - "[object_name](choucroute) est [object_gender](féminin)"
+
 # object entity
 ---
 type: entity
@@ -39,3 +54,12 @@ values:
 - phénix
 - félix
 - choucroute
+
+---
+type: entity
+name: gender
+automatically_extensible: no
+values:
+- féminin
+- masculin
+

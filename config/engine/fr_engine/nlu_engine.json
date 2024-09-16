@@ -184,12 +184,19 @@
   "custom_entity_parser": "custom_entity_parser",
   "dataset_metadata": {
     "entities": {
+      "gender": {
+        "automatically_extensible": false
+      },
       "object": {
         "automatically_extensible": true
       }
     },
     "language_code": "fr",
     "slot_name_mappings": {
+      "changeGenderOfObject": {
+        "object_gender": "gender",
+        "object_name": "object"
+      },
       "changeNameOfObject": {
         "new": "object",
         "old": "object"
