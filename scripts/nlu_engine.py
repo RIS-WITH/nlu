@@ -56,7 +56,7 @@ class NLU:
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser(description="nlu script to lib and to train") #TODO add call to module for transform yaml to json
-    parser.add_argument("--language","-l",dest='language',help="robot name",required=True)
+    parser.add_argument("--language","-l",dest='language',help="language",required=True)
     args = parser.parse_args()
     lang = args.language.lower()
     if(lang == "fr" or lang == "en"):
