@@ -22,13 +22,14 @@ class node_nlu():
         print(result)
         res = NLUParsingServiceResponse()
         res.intent = result.intent
-        res.comprehension_score = result.intent_proba
+        res.score = result.intent_proba
         res.slots = []
         for slot in result.slots:
             S = Slot()
             S.slotName = slot.slotName
             S.value = slot.value
             res.slots.append(S)
+        res.language = msg.language
         return res
 
     def run(self):

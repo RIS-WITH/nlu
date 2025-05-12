@@ -2,6 +2,7 @@ string sentence
 string language
 ---
 string intent
-float64 comprehension_score
+float64 score
+string language
 Slot[] slots
 
